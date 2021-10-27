@@ -1,0 +1,18 @@
+export const initialCards = [
+   { id: 1, color: 'red' },
+   { id: 2, color: 'red' },
+   { id: 3, color: 'blue' },
+   { id: 4, color: 'blue' },
+   { id: 5, color: 'green' },
+   { id: 6, color: 'green' },
+   { id: 7, color: 'yellow' },
+   { id: 8, color: 'yellow' },
+   { id: 9, color: 'purple' },
+   { id: 10, color: 'purple' },
+   { id: 11, color: 'pink' },
+   { id: 12, color: 'pink' },
+   { id: 13, color: 'black' },
+   { id: 14, color: 'black' },
+   { id: 15, color: 'gray' },
+   { id: 16, color: 'gray' },
+];
