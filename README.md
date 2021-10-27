@@ -12,8 +12,8 @@
 
 ## Technologies Used
 - **React** - version 17.0.2
-- **React Router Dom **- version 5.3
-- **Styled Components **- version 5.3.3
+- **React Router Dom** - version 5.3
+- **Styled Components** - version 5.3.3
 
 
 ## Features
