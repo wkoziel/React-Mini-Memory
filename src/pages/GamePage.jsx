@@ -18,6 +18,10 @@ const GamePage = () => {
 
    // INITIALIZATION
    useEffect(() => {
+      resetState();
+   }, []);
+
+   const resetState = () => {
       let shuffledCards = shuffle(initialCards);
       shuffledCards = shuffledCards.map((card) => {
          return { ...card, disabled: false };
@@ -27,7 +31,11 @@ const GamePage = () => {
       if (localStorage.getItem('Username') === null) {
          localStorage.setItem('Username', username);
       } else setUsername(localStorage.getItem('Username'));
-   }, []);
+
+      setPoints(10);
+      setFirstSelected(null);
+      setSecondSelected(null);
+   };
 
    // CHECK IF PAIR MATCHES
    useEffect(() => {
@@ -111,7 +119,7 @@ const GamePage = () => {
                   <button
                      className='reset'
                      onClick={() => {
-                        window.location.reload(false);
+                        resetState();
                      }}
                   >
                      Reset
