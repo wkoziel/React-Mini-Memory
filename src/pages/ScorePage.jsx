@@ -42,7 +42,7 @@ const StyleWrapper = styled.div`
       display: flex;
       flex-direction: column;
       align-content: space-between;
-      justify-items: center;
+      justify-content: space-between;
       background-color: #fff;
       padding: 2rem 5rem;
       border-radius: 1rem;
@@ -52,17 +52,28 @@ const StyleWrapper = styled.div`
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
    }
 
+   @media (max-width: 480px) {
+      .container {
+         min-width: 100vw;
+      }
+   }
+
    .item {
       display: flex;
       justify-content: space-between;
       border-bottom: 1px lightgray solid;
-      gap: 5rem;
       padding: 0 2rem;
 
       &-main {
          background-color: lightgray;
          border-radius: 1rem;
          padding: 1rem 1rem;
+      }
+   }
+
+   @media (min-width: 480px) {
+      .item {
+         gap: 5rem;
       }
    }
 `;

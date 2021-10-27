@@ -73,6 +73,12 @@ const StyleWrapper = styled.div`
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
    }
 
+   @media (max-width: 480px) {
+      .container {
+         min-width: 100vw;
+      }
+   }
+
    form {
       display: flex;
       flex-direction: column;

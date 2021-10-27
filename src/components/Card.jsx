@@ -53,6 +53,14 @@ const StyleWrapper = styled.div`
       background: #fff;
    }
 
+   @media (max-width: 480px) {
+      height: 12rem;
+      width: 8rem;
+      .side {
+         height: 12rem;
+      }
+   }
+
    .front-side {
       img {
          width: 100%;

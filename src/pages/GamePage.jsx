@@ -156,18 +156,31 @@ const StyleWrapper = styled.div`
 
    .box {
       display: flex;
-      justify-content: center;
-      gap: 5rem;
+      justify-content: space-between;
+      align-items: center;
       padding: 1rem 5rem;
       margin-bottom: 0.5rem;
-      margin-top: -3rem;
       background: lightgray;
       border-radius: 2rem;
+      max-width: 100vw;
+      min-width: 30%;
    }
 
    p {
       font-size: 1.5rem;
       font-weight: 700;
+   }
+
+   @media (max-width: 480px) {
+      p,
+      button {
+         font-size: 1rem;
+         font-weight: 700;
+      }
+      .box {
+         gap: 1rem;
+         padding: 1rem 2rem;
+      }
    }
 
    .reset {
