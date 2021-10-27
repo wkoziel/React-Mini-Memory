@@ -42,6 +42,10 @@ const StyleWrapper = styled.div`
    animation-name: showUp;
    animation-duration: 0.5s;
 
+   @media (max-width: 480px) {
+      min-width: 100vw;
+   }
+
    h1 {
       font-size: 3rem;
    }
